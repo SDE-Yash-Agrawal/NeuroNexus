@@ -1,0 +1,7 @@
+<h3>Task Form</h3>
+<a href="{% url 'Task' %}">Go Back</a> <!--Here the 'Task' is the name of our base url in urls.py-->
+<form method="POST" action="">
+    {% csrf_token %}
+    {{form.as_p}}
+    <input type="submit" value="Submit">
+</form>
