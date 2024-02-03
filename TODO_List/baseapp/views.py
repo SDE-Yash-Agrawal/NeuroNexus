@@ -1,6 +1,11 @@
 from django.shortcuts import render
 from django.views.generic.list import  ListView
+from django.views.generic.detail import  DetailView
 from .models import Task
 
-class Task(ListView):
+class TaskView(ListView):
+    model = Task
+    context_object_name = 'tasks'
+
+class TaskDetailView(DetailView):
     model = Task
