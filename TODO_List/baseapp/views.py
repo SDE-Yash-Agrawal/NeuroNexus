@@ -9,3 +9,5 @@ class TaskView(ListView):
 
 class TaskDetailView(DetailView):
     model = Task
+    context_object_name = 'task'
+    template_name = 'baseapp/task.html'
