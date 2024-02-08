@@ -24,6 +24,7 @@ def clear_filed():
     text_result.delete(1.0, "end")
 
 root = tk.Tk()
+root.title("Calculator")
 root.geometry("300x275") #size of GUI
 
 text_result = tk.Text(root, height=2, width=16, font=("Arial", 24))
